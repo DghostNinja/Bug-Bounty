@@ -119,7 +119,7 @@ config.cursor_thickness = 2
 -----------------------------------------------------------
 -- PERFORMANCE
 -----------------------------------------------------------
-//Changed WebGpu to OpenGL based on system
+//Change WebGpu to OpenGL based on system
 
 config.front_end = "OpenGL"
 
