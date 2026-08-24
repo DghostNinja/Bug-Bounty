@@ -119,8 +119,9 @@ config.cursor_thickness = 2
 -----------------------------------------------------------
 -- PERFORMANCE
 -----------------------------------------------------------
+//Changed WebGpu to OpenGL based on system
 
-config.front_end = "WebGpu"
+config.front_end = "OpenGL"
 
 config.max_fps = 144
 
@@ -207,20 +208,6 @@ config.keys = {
         key = "f",
         mods = "CTRL|SHIFT",
         action = wezterm.action.ActivateCopyMode,
-    },
-
-    -- Rotate panes clockwise
-    {
-        key = "r",
-        mods = "CTRL|SHIFT",
-        action = wezterm.action.RotatePanes "Clockwise",
-    },
-
-    -- Move pane to new tab (standalone)
-    {
-        key = "d",
-        mods = "CTRL|SHIFT",
-        action = wezterm.action.PaneSelect { mode = "MoveToNewTab" },
     },
 
 }
